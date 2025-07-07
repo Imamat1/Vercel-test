@@ -25,6 +25,8 @@
   ],
   "env": {
     "MONGO_URL": "mongodb+srv://plovcentr20:197724qqq@cluster0.5uejhpq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-    "SECRET_KEY": "uroki-islama-secret-key-2024"
-  }
+    "SECRET_KEY": "uroki-islama-secret-key-2024",
+    "DB_NAME": "uroki_islama_production"
+  },
+  "installCommand": "cd frontend && npm install"
 }
