@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/server.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/server.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/build/$1"
+    }
+  ],
+  "env": {
+    "MONGO_URL": "mongodb+srv://plovcentr20:197724qqq@cluster0.5uejhpq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "SECRET_KEY": "uroki-islama-secret-key-2024"
+  }
+}
