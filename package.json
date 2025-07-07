@@ -4,7 +4,8 @@
   "description": "Образовательная платформа для изучения основ ислама",
   "main": "setup-replit.sh",
   "scripts": {
-    "start": "bash setup-replit.sh",
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd frontend && npm start",
     "check": "python check_setup.py",
     "init-db": "python init_database.py",
     "dev:backend": "cd backend && python server.py",
