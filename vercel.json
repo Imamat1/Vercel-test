@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/server.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     },
     {
@@ -16,7 +16,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "backend/server.py"
+      "dest": "api/index.py"
     },
     {
       "src": "/(.*)",
@@ -29,6 +29,5 @@
     "SECRET_KEY": "uroki-islama-secret-key-2024",
     "DATABASE_URL": "postgresql://postgres:jsjsjdhsivdusbdis267263733673@db.kykzqxoxgcwqurnceslu.supabase.co:5432/postgres",
     "USE_POSTGRES": "true"
-  },
-  "installCommand": "cd frontend && npm install"
+  }
 }
