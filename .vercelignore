@@ -1,0 +1,84 @@
+# Исключить из деплоя на Vercel
+
+# Папки разработки
+backend/__pycache__
+backend/external_integrations
+*/__pycache__
+.pytest_cache
+.coverage
+htmlcov/
+
+# Файлы разработки
+backend/server_*.py
+backend/test_*.py
+backend/create_*.py
+backend/reset_*.py
+backend/init_*.py
+backend/switch_db.py
+backend/postgres_client.py
+backend/Dockerfile
+backend/DATABASE_SWITCHING_GUIDE.md
+
+# Тестовые файлы
+*_test.py
+test_*.py
+*.test.js
+test_*.html
+sample_test.pdf
+
+# Временные файлы
+*.tmp
+*.log
+*.bak
+*.swp
+*.swo
+*~
+
+# Конфигурационные файлы разработки
+docker-compose.yml
+nginx.conf
+capacitor.config.ts
+entrypoint.sh
+build.sh
+deploy.sh
+setup-replit.sh
+replit.nix
+.replit
+.dockerignore
+Dockerfile
+
+# Документация разработки
+DEPLOY_GUIDE.md
+GITHUB_SETUP.md
+ИНСТРУКЦИЯ_ПО_УРОКАМ.md
+ГОТОВО_К_ЗАГРУЗКЕ.md
+DEPLOY.md
+README.md
+schema_dvizheniy.txt
+vremena_namazov.txt
+konspekt_namaz.txt
+
+# Скрипты разработки
+scripts/
+*.sh
+*.py
+add_questions.sh
+start-simple.sh
+
+# Файлы курсов (можно перенести в Supabase Storage)
+uploads/
+namaz_konspekt.pdf
+namaz_test.json
+
+# Git и другие
+.git
+.gitignore
+.gitconfig
+.nojekyll
+.devcontainer
+.emergent
+
+# Зависимости (пересобираются автоматически)
+node_modules/
+package-lock.json
+yarn.lock
